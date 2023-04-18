@@ -1,5 +1,6 @@
-import { Button, Card, Col, Row } from "antd";
+import { Button, Card, Col, Grid, Row } from "antd";
 import { Attachments } from "components/PdfEditor/Attractment";
+import { Drawing } from "components/PdfEditor/Drawing";
 import { DrawingModal } from "components/PdfEditor/DrawingModal";
 import { EmptyComponent } from "components/PdfEditor/Empty";
 import { MenuBar } from "components/PdfEditor/MenuBar";
@@ -8,11 +9,12 @@ import { AttachmentTypes } from "entities";
 import { useAttachments } from "hooks/useAttractments";
 import { Pdf, usePdf } from "hooks/usePdf";
 import { UploadTypes, useUploader } from "hooks/useUploader";
-import { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { Container } from "reactstrap";
 import { ggID } from "ultis/helper";
 
 const PdfPage = () => {
+  const [helpModalOpen, setHelpModalOpen] = useState(false);
   const [drawingModalOpen, setDrawingModalOpen] = useState(false);
   const {
     file,

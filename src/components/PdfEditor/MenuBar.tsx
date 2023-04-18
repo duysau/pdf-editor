@@ -45,9 +45,9 @@ export const MenuBar: React.FC<Props> = ({
         <>
           <Col className="gutter-row" span={9}>
             <Dropdown menu={{ items }} trigger={["click"]}>
-              <p onClick={(e) => e.preventDefault()}>
+              <a onClick={(e) => e.preventDefault()}>
                 <Space>Click me</Space>
-              </p>
+              </a>
             </Dropdown>
           </Col>
 
