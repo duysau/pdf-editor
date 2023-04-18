@@ -1,5 +1,6 @@
 import React, { RefObject } from "react";
 import { ConfirmContent } from "./ConfirmContent";
+import { DragEventListener } from "types";
 
 interface Props {
   path?: string;

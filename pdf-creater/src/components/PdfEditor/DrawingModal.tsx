@@ -1,5 +1,4 @@
 import React, { useState, createRef, useEffect } from "react";
-import { Modal, Button, Menu, Dropdown, Label } from "semantic-ui-react";
 import { Color } from "../../entities";
 
 interface Props {

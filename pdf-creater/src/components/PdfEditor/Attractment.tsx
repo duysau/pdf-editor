@@ -1,8 +1,16 @@
 import React from "react";
-import { Image } from "../containers/Image";
-import { Drawing } from "../containers/Drawing";
-import { Text } from "../containers/Text";
+
 import { AttachmentTypes } from "entities";
+import {
+  Attachment,
+  Dimensions,
+  DrawingAttachment,
+  ImageAttachment,
+  TextAttachment,
+} from "types";
+import { Text } from "container/Text";
+import { Image } from "container/Image";
+import { Drawing } from "container/Drawing";
 
 interface Props {
   attachments: Attachment[];
